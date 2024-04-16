@@ -1,16 +1,15 @@
 import logo from "./assets/images/logo.png";
+import NavBar from "./components/NavBar";
+import Carousel from "./components/Carousel";
+import ItemListContainer from "./components/ItemListContainer";
 
 function App() {
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-12 bg-black text-center">
-          <a href="#">
-            <img src={logo} alt="Logotipo" width={320} />
-          </a>
-        </div>
-      </div>
-    </div>
+    <>
+      <NavBar />
+      <ItemListContainer saludo=" Hola Usuario! Bienvenido a la tienda" />
+      <Carousel />
+    </>
   );
 }
 
